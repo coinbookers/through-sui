@@ -197,3 +197,22 @@ def main():
     request = interaction.prepare(
         "0x1234567890123456789012345678901234567890"
     )
+
+    Reporter.print_header()
+
+    Reporter.print_request(
+        request
+    )
+
+    Reporter.print_footer()
+
+    print("Network:", config.name)
+    print("RPC:", config.rpc_url)
+    print("Chain ID:", config.chain_id)
+    print("Account:", account.address)
+    print("Status: Ready for review")
+
+
+if __name__ == "__main__":
+    main()
+```
